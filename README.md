@@ -54,6 +54,8 @@ cd saasMonk_movie_review
    ```env
    DATABASE_URL=postgresql://USER:PASSWORD@localhost:5432/DATABASE_NAME
    PORT=5000
+   In hurry to submit I have hard coded Backend URL on render it will work locally also because my backend is deployed on render
+   If you want you can uncomment the localhost codes
    ```
 
    Replace `USER`, `PASSWORD`, and `DATABASE_NAME` with your PostgreSQL credentials.
