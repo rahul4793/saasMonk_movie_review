@@ -111,10 +111,4 @@ cd saasMonk_movie_review
 - **PUT** `/movies/:movieId/reviews/:id` - Update a specific review
 - **DELETE** `/movies/:movieId/reviews/:id` - Delete a specific review
 
-## Contributing
 
-Feel free to submit issues or pull requests. 
-
-## License
-
-This project is licensed under the MIT License.
