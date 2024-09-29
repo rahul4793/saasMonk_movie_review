@@ -12,11 +12,22 @@ const AddMovieDialog: React.FC<AddMovieDialogProps> = ({ open, onClose, fetchMov
   const [name, setName] = useState('');
   const [releaseDate, setReleaseDate] = useState('');
 
+  // const handleSubmit = async () => {
+  //   await axios.post('http://localhost:5000/movies', { name, releaseDate });
+  //   fetchMovies();
+  //   onClose();
+  // };
+
   const handleSubmit = async () => {
-    await axios.post('http://localhost:5000/movies', { name, releaseDate });
-    fetchMovies();
-    onClose();
-  };
+      await axios.post('https://saasmonk-movie-review.onrender.com/movies', { name, releaseDate });
+      fetchMovies();
+      onClose();
+    };
+  
+
+
+
+
 
   return (
     <Dialog open={open} onClose={onClose}>

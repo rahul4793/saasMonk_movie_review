@@ -13,12 +13,14 @@ const ReviewList: React.FC<{ movieId: number }> = ({ movieId }) => {
   }, []);
 
   const fetchReviews = async () => {
-    const response = await axios.get(`http://localhost:5000/movies/${movieId}/reviews`);
+    // const response = await axios.get(`http://localhost:5000/movies/${movieId}/reviews`);
+    const response = await axios.get(`https://saasmonk-movie-review.onrender.com/movies/${movieId}/reviews`);
     setReviews(response.data);
   };
 
   const handleAddReview = async () => {
-    await axios.post(`http://localhost:5000/movies/${movieId}/reviews`, { reviewerName, rating, comment });
+    // await axios.post(`http://localhost:5000/movies/${movieId}/reviews`, { reviewerName, rating, comment });
+    await axios.post(`https://saasmonk-movie-review.onrender.com/movies/${movieId}/reviews`, { reviewerName, rating, comment });
     fetchReviews();
   };
 

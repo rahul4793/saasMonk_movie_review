@@ -11,14 +11,16 @@ const MovieList: React.FC = () => {
   useEffect(() => {
     fetchMovies();
   }, []);
-
+//https://saasmonk-movie-review.onrender.com
   const fetchMovies = async () => {
-    const response = await axios.get('http://localhost:5000/movies');
+    // const response = await axios.get('http://localhost:5000/movies');
+     const response = await axios.get('https://saasmonk-movie-review.onrender.com/movies');
     setMovies(response.data);
   };
 
   const handleDelete = async (id: number) => {
-    await axios.delete(`http://localhost:5000/movies/${id}`);
+    // await axios.delete(`http://localhost:5000/movies/${id}`);
+    await axios.delete(`https://saasmonk-movie-review.onrender.com/movies/${id}`);
     fetchMovies();
   };
 

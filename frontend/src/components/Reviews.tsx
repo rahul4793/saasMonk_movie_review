@@ -12,7 +12,8 @@ const Reviews: React.FC = () => {
   }, []);
 
   const fetchReviews = async () => {
-    const response = await axios.get('http://localhost:5000/reviews'); // Update the API endpoint as needed
+    // const response = await axios.get('http://localhost:5000/reviews'); // Update the API endpoint as needed
+    const response = await axios.get('https://saasmonk-movie-review.onrender.com/reviews'); // Update the API endpoint as needed
     setReviews(response.data);
   };
 
