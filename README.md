@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/8c920f29-08e8-4aa2-807a-ba7099cf90cb)
 
 # Movie Review App
 
