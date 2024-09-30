@@ -1,5 +1,8 @@
 ![image](https://github.com/user-attachments/assets/8c920f29-08e8-4aa2-807a-ba7099cf90cb)
 
+![image](https://github.com/user-attachments/assets/6d6503da-49b8-4e09-b239-a5bc44eef4ed)
+
+
 # Movie Review App
 
 This is a movie review application where users can submit reviews for movies, and the application calculates and displays average ratings.
